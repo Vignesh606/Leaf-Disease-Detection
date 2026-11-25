@@ -21,22 +21,15 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-# Hide default Streamlit sidebar toggle & extra chrome for a clean website feel
+# Hide default Streamlit sidebar toggle & fix top spacing so navbar is never clipped
 st.markdown(
     """
     <style>
     [data-testid="stSidebar"] { display: none; }
     [data-testid="collapsedControl"] { display: none; }
-    .block-container { padding-top: 1.5rem; padding-bottom: 2rem; max-width: 1050px; }
-    .nav-logo { font-size: 1.7rem; font-weight: 700; color: #166534; margin: 0; padding-top: 0.15rem; }
-    .upload-card {
-        border: 1.5px dashed #22c55e;
-        border-radius: 12px;
-        padding: 1.5rem 2rem;
-        background-color: rgba(34, 197, 94, 0.05);
-        margin-top: 1rem;
-        margin-bottom: 1.5rem;
-    }
+    header[data-testid="stHeader"] { background: transparent; }
+    .block-container { padding-top: 3.8rem; padding-bottom: 2rem; max-width: 1050px; }
+    .nav-logo { font-size: 1.7rem; font-weight: 700; color: #4ade80; margin: 0; padding-top: 0.1rem; }
     .footer-box {
         border-top: 1px solid rgba(148, 163, 184, 0.35);
         padding-top: 1.2rem;
@@ -113,12 +106,10 @@ if page == "Home":
     # Centered Upload Box
     _, center_col, _ = st.columns([1, 2.4, 1])
     with center_col:
-        st.markdown('<div class="upload-card">', unsafe_allow_html=True)
         uploaded = st.file_uploader(
             "Upload a photo of the crop leaf (JPG or PNG)",
             type=["jpg", "jpeg", "png"],
         )
-        st.markdown("</div>", unsafe_allow_html=True)
 
     if uploaded is not None:
         img = Image.open(uploaded)
