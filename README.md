@@ -17,10 +17,23 @@
 - **Reviewer 1:** Ms. Mamta Patankar  
 - **Reviewer 2:** Mr. Ajeet Singh  
 
-## Repository Contents
-- `assets/` — High-resolution (300 DPI) architecture, preprocessing, CNN, Gantt chart, and evaluation figures.
-- `generate_figures.py` — Script to generate system architecture and evaluation plots.
-- `build_report.py` & `build_presentation.py` — Document generation scripts (outputs excluded via `.gitignore`).
+## Project Structure
+- `app.py` — Streamlit web application for leaf upload, `224×224` preprocessing, real-world augmentation preview, and disease screening.
+- `src/preprocessing.py` — Image resizing, `[0, 1]` normalization, augmentation generator, and foliar color analytics.
+- `src/train_cnn.py` — Phase-I 4-block CNN (`Conv2D + BatchNorm + ReLU + MaxPool + GAP + Dropout`) training script.
+- `requirements.txt` — Python dependencies for Streamlit Cloud deployment.
+- `assets/` — System architecture, preprocessing pipeline, CNN, Gantt chart, and evaluation figures.
+
+## Run Locally
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+## Deploy on Streamlit Community Cloud
+1. Go to [share.streamlit.io](https://share.streamlit.io) and sign in with GitHub.
+2. Click **New app** → Select repo `Vignesh606/Leaf-Disease-Detection`, branch `main`, main file `app.py`.
+3. Click **Deploy**.
 
 ## Datasets & References
 - `faysal05/plant-diseases-dataset` (Kaggle)
