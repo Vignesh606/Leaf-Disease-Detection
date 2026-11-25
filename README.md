@@ -3,15 +3,15 @@
 **DSN3099 – Engineering Projects in Community Service (EPICS)**  
 **VIT Bhopal University**
 
-## Team Members
-| Sl. No. | Register Number | Name |
-| :--- | :--- | :--- |
-| 1 | `24MEI10002` | Puli Sai Chaithanya Kumar |
-| 2 | `24BEC10165` | Addepalli Sai Krishnam Raju |
-| 3 | `24BCY10362` | Atla Dhatri Sai |
-| 4 | `24BEC10071` | Pragada Sharmila |
-| 5 | `24BCY10002` | Madineni Vignesh |
-| 6 | `24MIM10243` | K Bala Yaswanth |
+## Team Members & Contributors
+| Sl. No. | Register Number | Name | GitHub |
+| :--- | :--- | :--- | :--- |
+| 1 | `24MEI10002` | Puli Sai Chaithanya Kumar | [@Chaithanya-1907](https://github.com/Chaithanya-1907) |
+| 2 | `24BEC10165` | Addepalli Sai Krishnam Raju | [@SaiKrishna1290](https://github.com/SaiKrishna1290) |
+| 3 | `24BCY10362` | Atla Dhatri Sai | [@dhatri279](https://github.com/dhatri279) |
+| 4 | `24BEC10071` | Pragada Sharmila | [@pragadasharmila94-creator](https://github.com/pragadasharmila94-creator) |
+| 5 | `24BCY10002` | Madineni Vignesh | [@Vignesh606](https://github.com/Vignesh606) |
+| 6 | `24MIM10243` | K Bala Yaswanth | [@yaswanth3322-art](https://github.com/yaswanth3322-art) |
 
 - **Supervisor:** Dr. Mostaid Ahmed  
 - **Reviewer 1:** Ms. Mamta Patankar  
